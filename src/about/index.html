@@ -1,0 +1,109 @@
+---
+layout: default
+---
+<div class="flex flex-col items-center justify-center">
+  <div class="about-hero">image/graphic</div>
+  <nav class="flex flex-row about-nav">
+    <a class="about-nav-items" href="#about">About Us</a>
+    <a class="about-nav-items" href="#vision">Our Vision</a>
+    <a class="about-nav-items" href="#mission">Our Missions</a>
+    <a class="about-nav-items" href="#principle">Operating Principles</a>
+    <a class="about-nav-items" href="#faq">FAQs</a>
+  </nav>
+  
+  {% set aboutUs = collections.about %}
+  <div id="about" class="sec-head-about flex-col default-container">
+    <h1>{{ aboutUs[0].data.title }}</h1>
+    <p>{{ aboutUs[0].templateContent | safe }}</p>
+  </div>
+  {% set vision = collections.vision %}
+  <div class="black-body flex flex-col">
+    <div id="vision" class="sec-head-vision default-container">
+      <h1>Our Vision</h1>
+      <p>We envision a world of:</p>
+    </div>
+    {% set vision = collections.vision %}
+    <div class="flex card-stack">
+      <div class="vision-card Justice-card">{{ vision[0].data.title1 }}
+        <img src="/static/img/justice.png" alt="">
+      </div>
+      <div class="vision-card Liberation-card">{{ vision[0].data.title2 }}
+        <img src="/static/img/liberation.png" alt="">
+      </div>
+      <div class="vision-card Love-card">{{ vision[0].data.title3 }}
+        <img src="/static/img/love.png" alt="">
+      </div>
+    </div>
+  </div>
+
+  <div id="mission" class="sec-head-mission default-container">
+    <h1>Our Missions</h1>
+    <p>We are a group of young people committed to creating a more just world for people, all living beings and the planet. We seek to do this through:</p>
+  </div>
+  {% set vision2 = collections.vision2 %}
+  <div>
+    <div class="mission-one">
+      <div class="mission-img"><div class="mission-l-text">{{ vision2[0].data.text1 }}</div></div>
+    </div>
+    <div class="mission-two">
+      <div class="mission-img flex justify-end"><div class="mission-r-text">{{ vision2[0].data.text2 }}</div></div>
+    </div>
+    <div class="mission-three">
+      <div class="mission-img"><div class="mission-l-text">{{ vision2[0].data.text3 }}</div></div>
+    </div>
+  </div>
+
+  <div class="likes flex flex-col items-center">
+    <h1>We are a global movement, a part of something bigger, together.</h1>
+    {% set likeThis = collections.like %}
+    <h2 class="like-this">Like this:</h2>
+    <ul class="like-this-list">
+      <li>{{ likeThis[0].data.like1 }}</li>
+      <li>{{ likeThis[0].data.like2 }}</li>
+      <li>{{ likeThis[0].data.like3 }}</li>
+      <li>{{ likeThis[0].data.like4 }}</li>
+      <li>{{ likeThis[0].data.like5 }}</li>
+    </ul>
+    {% set unlikeThis = collections.unlike %}
+    <h2 class="unlike-this">Not like this:</h2>
+    <ul class="unlike-this-list">
+      <li>{{ unlikeThis[0].data.unlike1 }}</li>
+      <li>{{ unlikeThis[0].data.unlike2 }}</li>
+      <li>{{ unlikeThis[0].data.unlike3 }}</li>
+      <li>{{ unlikeThis[0].data.unlike4 }}</li>
+      <li>{{ unlikeThis[0].data.unlike5 }}</li>
+    </ul>
+  </div>
+
+  <div id="principle" class="sec-head-principles default-container">
+    <h1>Operating Principles</h1>
+    <div class="operating-principle">
+      {% set principles = collections.principles %}
+      {% for i in range(1, 10) %}
+      <div id="tab{{ i }}" class="principle">
+        <h3>{{ i }}</h3>
+        <h2>{{ principles[0].data['title' + i] }}</h2>
+        <p>{{ principles[0].data['principle' + i] }}</p>
+      </div>
+    {% endfor %}
+    </div>
+  </div>
+
+  <div id="faq" class="sec-head-faq flex-col default-container">
+    <h1>FAQs</h1>
+    <input type="text" placeholder="Search">
+    <div class="faq-container">
+      {% set faqList = collections.faq %}
+      {% for i in range(1, 6) %}
+      <div class="faq-item">
+          <button class="faq-question">{{ faqList[0].data['faq' + i] }}</button>
+          <div class="faq-answer">
+              <p>{{ faqList[0].data['ans' + i] }}</p>
+          </div>
+      </div>
+      {% endfor %}
+    </div>
+    
+  </div>
+
+</div> 

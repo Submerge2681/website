@@ -1,0 +1,159 @@
+---
+layout: default
+---
+
+<div class="flex flex-col items-center justify-center">
+    <div class="default-container contact-us">
+        <form id="contact-form" class="contact-form" action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSeNDRWXY_x30sMolZBCdke0I5w4gj-Ev0r2Pkt7Y3mxcnNJWQ/formResponse" method="post" target="hidden_iframe2"
+        onsubmit="return submitMessage();">
+            <h1>Contact us</h1>
+            <input class="email" name="entry.1040005887" type="email" placeholder="Email" required/>
+            <textarea class="message" name="entry.1741702974" type="text" placeholder="Write to us..." required></textarea>
+            <input class="contact-button" type="submit" value="Submit ->" />
+        </form>
+        <div id="thanks-message" style="display: none;">
+            <p>Thank you, Somebody from our team will get in touch with you soon!</p>
+        </div>
+        <div class="contact-social">
+            <p class="footer-social-text">Find us at</p>
+            <div class="flex flex-row gap-4">
+                <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <mask id="mask0_207_209" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="28" height="28">
+                    <rect width="27.3028" height="27.3028" fill="url(#pattern0_207_209)"/>
+                    </mask>
+                    <g mask="url(#mask0_207_209)">
+                    <rect x="2" y="2" width="23" height="23" fill="black"/>
+                    </g>
+                    <defs>
+                    <pattern id="pattern0_207_209" patternContentUnits="objectBoundingBox" width="1" height="1">
+                    <use xlink:href="#image0_207_209" transform="scale(0.0104167)"/>
+                    </pattern>
+                    <image id="image0_207_209" width="96" height="96" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGAAAABgCAYAAADimHc4AAAACXBIWXMAAAsTAAALEwEAmpwYAAAFAUlEQVR4nO2dz29VRRSAv1RANBFjRRPtw7gnuNPAn0BUolbR6JYQUMAlP9wqZSshEqJujEaR4EIR/Qs0upNgqLqyxYXSkkhFLX3NmJFD0pC+d+e+N2fu3DfnS07StO++mTln7sycM2emYBiGYRiGYRiGYRiGYRhxuQPYBhwBzgI/AleBG4BrWG5IXS5K3Q4DW4GxUegEm4BjwOUMFO1qyiwwBXRoIQ8Ap4DFDBTphhTfhneA+2kJLwPzGSjORZY54EUyZi3wbgaKcspyElhDZtwNnM9AOS6RnJM2Z9PzS1K+W2GELN6EEoYd10P85Nwor2SgBKcgM8AkcI/Is8B0j8/ubHKpOT+iyh9fpb3j4hvc/vkrPT6vzqkMlOUUxPf8XrzQ45kTNODhjoKT5VYRP+T0YkOPZ/4FJhLq///wgivQAPf2ee5oysBaG2M7LlD8hNuLyYq5I0kAb1sGSnKKMt1nEv654tknUhjgSAZKcsoyKxPuBpHJAOV7OZTCAGcbUEgX+AZ4C3gO2AzcJ174Wvl5s/zNj8XfAssN1PNMCgNcTNigGeDggCuMjvTI1dbuWnKBBKRwvv4AdgPrItTXf8deCSdr19s7Zepor/8/UvIs/YbKJ8p19/6AOpp7s7sS1H8PsKTYDnU0Kn0d2E46npQyzQDc7Pkplb/SCBpvgjqxK7yL5thbugE+rFn2I8B+4GvxWP8SmZbf7ZNAYR1Ol2qAOWBjYJkTEv7uBnyvd8A+BR6tsTq6UqIBdgeW9wywMMD3XwN2BJbxWmkGmAl0sl4fMqTgnz0QUM6dESO86sSopA8vhPT8GPGc5cA34XApBugGxHY6Aw47/YajhyvK3BTJ4OoMW0Ef1azi/YjKvyU+faaK70owgA8pVy01uwoG6AZkOk+VYIB+W37IpOmUxK92+vF8CQbwGyf9+ErRAF9WlL2lBANUhZp/UTSA95j7sbEEA1St/xcUDeC/u8ofMAOgZ4A/zQDVQ9BPiga4VFF2EUOQTcING8CnjvRjn+Ib4OP/DJB8O1JvwNGAkEBXQflLAY5YjJxXdYatoE+aquI9BQP4/YQqvi/BAMsBPXFCAmgxVz8PBYRAigjGheZQ7ogYjn46Yc6rOjEqORu4IXMgwoaM30OuYj3wW0kGCFmRrHwTrg047DxFGPsjtkudWBWdl4N+IfjPvR2Yx+N7/QcBY/7KTfmYeaPquIjycc2yOxJSPi9e7YLIJYl0vjrA7SZnIrdJHRdZ9tAcMYee1hqgG7BJo4GfHyw1kZtGuC65mqnwy9K/FTpTK98AJ7JUY2U07LDT6vR07QMap2ukLNbhQYUJt5EDGimOKM3LasfvUA3Leun1V0fliFLKQ3qXJWOtbsbzrdjOGxE93GwO6TVxTHVZkqamJHVki+ysrRPxPz8mfzsmUc2RPaZawkFtp5jzOjRbM2ioy1QeT2GAMUkvb7qxLjP5NeVtuzFyKN2ISVXOa1Q6I3xhkxtAkl/YhNwY2HTDXSZynAYYlzsdXOEy1+S90i9loADXsHjfo1FOZqAEV9LQs9odcp9loAyXWL7I5epi5CLrcxkoxSWSz4G7yIw1hayMjufU81djZ+Sj/y4T+T2HCbfOEvWEOCiu5fKP9Hp/MWDrmJBs6JmWxnbeDDjg3QrG5FLTQxIzvyC7XosZKHpR6vKD1O2gRDVH4t9YGYZhGIZhGIZhGIZhGGTDfwxBgVqpFHq3AAAAAElFTkSuQmCC"/>
+                    </defs>
+                </svg>
+                <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <mask id="mask0_207_227" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="28" height="28">
+                    <rect x="0.0732422" width="27.3028" height="27.3028" fill="url(#pattern0_207_227)"/>
+                    </mask>
+                    <g mask="url(#mask0_207_227)">
+                    <rect x="3" y="2" width="23" height="23" fill="black"/>
+                    </g>
+                    <defs>
+                    <pattern id="pattern0_207_227" patternContentUnits="objectBoundingBox" width="1" height="1">
+                    <use xlink:href="#image0_207_227" transform="scale(0.0104167)"/>
+                    </pattern>
+                    <image id="image0_207_227" width="96" height="96" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGAAAABgCAYAAADimHc4AAAACXBIWXMAAAsTAAALEwEAmpwYAAAB4UlEQVR4nO3ar2tWYRyG8asoiDY1i80mCzajXSaCYDSKWNdEg2lN7ILNqMl/wFWrImJxTcQfIMIGtwgnyNh8leec95znea4P3G0v7Hxv7rMxBpIkSZJUvwvAbeAJ8ArYBb4AGfIV+DzkPfB2+LoXw2e2gRtzP0RtzgBbwJs/Dl2Sl3M/UC1OAPeB7yMd3gL+w6Xh9THm4S3gH10Hfkx0fF9BK2wCexMe3wJWvHZ+Tnx8CzjCyeHXxqmPbwFHeLim41vAIc5O/EPXAla4t8bju4BDvLOA+Vxc8/FdwAF3RjrqB+ARcAu4Blz5SzYOfhM9ezrC8R8Ax+Z+kFrtFB7/95+ZVWC3sICrXr/Mt8ICzltAmf3CAk5bQJkU5rgFzFuACsUC5hULsICuxQVYQNfiAiygKakkp2hUKsgnGpYK8pqGpYI8p2GpII9pWCrIFg1LBblJw1JBLtOwVJBzNCwLz37r/8KShecjjcvCs0PjsvA8o3FZeLZpXBaeuzQuC8/m3AdamhRGFlC3uAAL6FpcgAV0LS7AAroWF2ABXYsLsICuxQVYQNfiAiyga3EBFtC1uAAL6FpcgAV0LS7AAroWF2ABXYsLsICuxQVYQNfiAiyga3EBFtC1uAALkCRJkiTG8gshXQKaky85qgAAAABJRU5ErkJggg=="/>
+                    </defs>
+                </svg>
+                <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <mask id="mask0_207_212" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="28" height="28">
+                    <rect x="0.697266" width="27.3028" height="27.3028" fill="url(#pattern0_207_212)"/>
+                    </mask>
+                    <g mask="url(#mask0_207_212)">
+                    <rect x="2" y="2" width="23" height="23" fill="black"/>
+                    </g>
+                    <defs>
+                    <pattern id="pattern0_207_212" patternContentUnits="objectBoundingBox" width="1" height="1">
+                    <use xlink:href="#image0_207_212" transform="scale(0.0104167)"/>
+                    </pattern>
+                    <image id="image0_207_212" width="96" height="96" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGAAAABgCAYAAADimHc4AAAACXBIWXMAAAsTAAALEwEAmpwYAAAEqklEQVR4nO2ca6gVVRTHf9ZNU3v5Jol8lFaYRCWJUVJ+yAdyQT+UKIqZFQQpESJkpRbiB6Oih3WtiHwgKuKDICg0lVQUtD5k9jCi8pFKaRa+PSc2zYGLHO5dc85de++ZWT/Y387MXnv/z8ys/8xeGwzDMAzDMAzDMAzDMAyjOvcA54CyUlsU2cRfC3wjjP01X0HNURTgEjCCOLgS2CiM+9Pk9164AtiiKMLvQBfC844w3j1AZ9/B9QP+VhRhGWF5ThjnIeCmUEFOUxSgDEwINK4xwEVBfP8AdxGY1YoCnABu9jyeu5OJbS02J1AjEdAdOKwowhdAO09j6Z08fyRxPUtEPAKUFEWY6WEM1wBfC+NpIkLeVRTgLDBYMXaXPm4QxvIZ0ECEXA18qyjCXqC9UuxvCWNw47ueArvkhQoxzxD2fThAQlATLyq75IfaMNbRwAVBv6eBoWQE55K3KorwC3BdG8R5J3BSKPo4MoZzyacURfi4zvhuBH4T9vU8GeUJRQHKwKM1xtUJ2CXs40MyjqZLPp78k9PeHtcLz/+lYtaVG5f8eUqX/KbwvN8BN5ATtF3yM8I4nkxxZd1KzlisKMAZYFAr/Y8SppvuXMPIIe7B972iCHtauF8PEqab7iqdSI5xLvm8ogivVunTPaR/FR7/AgXgJUUBLgHDm/XVMUW6Wa+vyAzaLvnnZBWD62ed8JhtQAcKRH9ll/wB8LrwtweSVLlwTFcUoFzkdDMNawJO/jngYQqOu/SPBJh8l25ODj34WBip7JKrtXmhBx0b73mc/FUeV1hkhk7KLrnSvipaupmG+4Tvampth4qabqbhZUUBLmTpm24oGoAdiiIcSBZfGQFd8mKb/bAuuQSMNRHCuuSjQC8TIaxLXm8ChHfJ00yE1nlfUYB/gQEmQss0KgpQccfeKhuzxh1JiVJZuRXiW3AtD+GfPEx+xSW7VyFGs0IPTUdcre1PXgoWnnbACs+TX2lvF372+b8CphyolZL64MLyeMDJb/7auhsFZIRw1dzFxEAdVRTBvQYpFLcDfwknxxXUVRbbarrkKRSEbinSzSWXHdukKIDbhKQvBUg3t9dRHO22h/lBUYRcu2SXbi4XTsS+Foqj71VecT2bnLJAOAFHBMXRcxUFcOIOIWdMFQ7+tPBDurs17VQUYV+y1D0XDE823pCs9R8f0bfkN8gBt6VIN2fVcP6nFAUoJdsaZDrd/FE42I/q6Ee6w2Et7SDQlQzSPil6lgxyS53F0T2UvyWvJYPp5rIUxdFd2qBPbZecqUrKVwJVqzQpCuBKXvuQASYI/4lngPvbuG9tl7wtdpf8oDDdLAGTlGLQdsnRbmNzC3BMOIg5yrHMUxTgbAybtlZLN6WX/koP1SoNHlyye6kYBS593JziHtrB4xV5Ku/b7bt/8tIU1ewuX/fJ03nfbl96r/0TGBgoxo153W7/MWG6eT5wcXQP4A9FEdz3De88kCLdjOE762hll+x1u/3+KdLN+cTDkjxst981RW3v6siKozsru2T17favAjYJg9kd6ZrLIcouWW27fafsJym2GO5JvMzP8Hb7hmEYhmEYhmEYhmEYBtnkP7yN9LQHlLUWAAAAAElFTkSuQmCC"/>
+                    </defs>
+                </svg>
+            </div>
+        </div>
+    </div>
+    <iframe name="hidden_iframe2" id="hidden_iframe2" style="display:none;"></iframe>
+
+    <div class="contact-dept default-container">
+        {% set deptList = collections.department %}
+        {% for i in range(1, 5) %}
+        <div>
+            <h2>{{ deptList[0].data['dept' + i] }}</h2>
+            <p class="dept-email">
+                <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g clip-path="url(#clip0_43_1554)">
+                    <path d="M40 8H8C5.8 8 4.02 9.8 4.02 12L4 36C4 38.2 5.8 40 8 40H40C42.2 40 44 38.2 44 36V12C44 9.8 42.2 8 40 8ZM40 16L24 26L8 16V12L24 22L40 12V16Z" fill="black"/>
+                    </g>
+                    <defs>
+                    <clipPath id="clip0_43_1554">
+                    <rect width="48" height="48" fill="white"/>
+                    </clipPath>
+                    </defs>
+                </svg>    
+                {{ deptList[0].data['email' + i] }}</p>
+            <p class="dept-phone">
+                <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g clip-path="url(#clip0_43_1557)">
+                    <path d="M13.24 21.58C16.12 27.24 20.76 31.86 26.42 34.76L30.82 30.36C31.36 29.82 32.16 29.64 32.86 29.88C35.1 30.62 37.52 31.02 40 31.02C41.1 31.02 42 31.92 42 33.02V40C42 41.1 41.1 42 40 42C21.22 42 6 26.78 6 8C6 6.9 6.9 6 8 6H15C16.1 6 17 6.9 17 8C17 10.5 17.4 12.9 18.14 15.14C18.36 15.84 18.2 16.62 17.64 17.18L13.24 21.58Z" fill="black"/>
+                    </g>
+                    <defs>
+                    <clipPath id="clip0_43_1557">
+                    <rect width="48" height="48" fill="white"/>
+                    </clipPath>
+                    </defs>
+                </svg>
+                {{ deptList[0].data['phone' + i] }}</p>
+        </div>
+        {% endfor %}
+    </div>
+
+    <div class="contact-key default-container">
+        <h1>Key Personnel</h1>
+        <div>
+            {% set personnelList = collections.personnel %}
+            {% for i in range(1, 5) %}
+            <div>
+                <h2>{{ personnelList[0].data['name' + i] }}</h2>
+                <p class="dept-email">
+                    <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g clip-path="url(#clip0_43_1554)">
+                        <path d="M40 8H8C5.8 8 4.02 9.8 4.02 12L4 36C4 38.2 5.8 40 8 40H40C42.2 40 44 38.2 44 36V12C44 9.8 42.2 8 40 8ZM40 16L24 26L8 16V12L24 22L40 12V16Z" fill="black"/>
+                        </g>
+                        <defs>
+                        <clipPath id="clip0_43_1554">
+                        <rect width="48" height="48" fill="white"/>
+                        </clipPath>
+                        </defs>
+                    </svg> 
+                    {{ personnelList[0].data['email' + i] }}</p>
+                <p class="dept-phone">
+                    <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g clip-path="url(#clip0_43_1557)">
+                        <path d="M13.24 21.58C16.12 27.24 20.76 31.86 26.42 34.76L30.82 30.36C31.36 29.82 32.16 29.64 32.86 29.88C35.1 30.62 37.52 31.02 40 31.02C41.1 31.02 42 31.92 42 33.02V40C42 41.1 41.1 42 40 42C21.22 42 6 26.78 6 8C6 6.9 6.9 6 8 6H15C16.1 6 17 6.9 17 8C17 10.5 17.4 12.9 18.14 15.14C18.36 15.84 18.2 16.62 17.64 17.18L13.24 21.58Z" fill="black"/>
+                        </g>
+                        <defs>
+                        <clipPath id="clip0_43_1557">
+                        <rect width="48" height="48" fill="white"/>
+                        </clipPath>
+                        </defs>
+                    </svg>
+                    {{ personnelList[0].data['phone' + i] }}</p>
+            </div>
+            {% endfor %}
+        </div> 
+    </div>
+    <div class="contact-letter default-container">
+        <h1>Subscribe to our newsletter</h1>
+        <div id="newsletter-contact">
+            <form class="flex flex-col justify-center newsletter-content" 
+                  action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSe1CAONyhb1usieJgkfJFq7r3uASwy94fSPWehJPs7Y7D5AXg/formResponse" 
+                  method="post" 
+                  target="hidden_iframe3" 
+                  onsubmit="return submitLetter2();">
+                <input class="newsletter-inp" type="email" placeholder="E-mail ID" name="entry.1728353720" required>
+                <button class="newsletter-button" type="submit">Subscribe →</button>
+            </form>
+        </div>
+        <div id="thanks-letter-contact" style="display: none;">
+            <p>Thank you for subscribing to our newsletter!</p>
+        </div>
+    </div>
+    <iframe name="hidden_iframe3" id="hidden_iframe3" style="display:none;"></iframe>
+    <div class="contact-past-letters default-container">
+        <div>
+            <h2>Peek into our previous newsletters...</h2>
+            <div></div>
+        </div>
+        <img src="/static/img/letter.png" alt="">
+    </div>
+</div>

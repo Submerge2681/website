@@ -1,0 +1,116 @@
+.nav-bar{
+    position: fixed;
+    z-index: 9;
+    padding-top: 0.5rem;
+    background: none;
+    box-shadow: none;
+    }
+.logo{
+    background: none;
+}
+.hero-small-text{
+    font-family: 'Jura';
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 35px;
+    text-align: center;
+    color: #FFFFFF;
+}
+.hero-large-text{
+    font-family: 'Inika';
+    font-weight: 400;
+    font-size: 84px;
+    line-height: 109px;
+    text-align: center;
+    color: #FFFFFF;
+}
+.large-text-box{
+    margin: 2rem;
+}
+.urgent-button{
+    padding: 10px;
+    width: 264px;
+    height: 59px;
+    background: #FF7A00;
+    border: 3px solid #EBFF00;
+    border-radius: 100px;
+    color: #000000;
+}
+.urgent-button:hover{
+    background: #000000;
+    border: 3px solid #EBFF00;
+    color: #FF7A00;
+}
+.hero-section{
+    background-image: url(/static/img/planet.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position-x: center;
+    background-position-y: 0;
+}
+
+.img-cont1{
+    width: 100%;
+    display: flex;
+    justify-content: space-between !important;
+    align-items: center;
+    margin: 2rem;
+}
+.text-cont1{
+    width: 75%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.img1{
+    min-width: 588px;
+    height: 400px;
+    background: #D9D9D9;
+    border-radius: 0px 200px 200px 0px;
+}
+.img1-txt{
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 29px;
+    color: #FFFFFF;
+    margin: 1rem;
+}
+
+.img-cont2{
+    margin-top: 2rem;
+    width: 100vw;
+    height: 522px;
+    background: #D9D9D9;
+}
+.img2{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+.img2-button{
+    height: 174px;
+    border: 1px solid #FFFFFF;
+    border-radius: 87px 0px 0px 0px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 6rem;
+    font-family: 'Jura';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+}
+.button-one{
+    width: 377px;
+    background: #EBFF00;
+}
+.button-two{
+    width: 468px;
+    background: #FF7A00;
+}
+.button-three{
+    width: 567px;
+    background: #00AEC0;
+}

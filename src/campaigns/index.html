@@ -1,0 +1,94 @@
+---
+layout: default
+---
+
+<div class="flex flex-col items-center justify-center">
+    <div class="campaigns-hero">image/graphic</div>
+    <nav class="flex flex-row campaigns-nav">
+        <a class="campaigns-nav-items" href="#campaigns">Current Campaigns</a>
+        <a class="campaigns-nav-items" href="#petitions">Petitions</a>
+    </nav>
+    <div class="default-container">
+        <div id="campaigns" class="sec-head">
+            <h1>Current Campaigns</h1>
+            <button>
+                <svg width="29" height="28" viewBox="0 0 29 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g clip-path="url(#clip0_43_1326)">
+                        <path
+                            d="M5.4583 6.54508C7.81496 9.56675 12.1666 15.1667 12.1666 15.1667V22.1667C12.1666 22.8084 12.6916 23.3334 13.3333 23.3334H15.6666C16.3083 23.3334 16.8333 22.8084 16.8333 22.1667V15.1667C16.8333 15.1667 21.1733 9.56675 23.53 6.54508C24.125 5.77508 23.5766 4.66675 22.6083 4.66675H6.37996C5.41163 4.66675 4.8633 5.77508 5.4583 6.54508Z"
+                            fill="black" />
+                    </g>
+                    <defs>
+                        <clipPath id="clip0_43_1326">
+                            <rect width="28" height="28" fill="white" transform="translate(0.5)" />
+                        </clipPath>
+                    </defs>
+                </svg>
+                Filter
+            </button>
+        </div>
+        <section class="flex flex-wrap justify-center items-center">
+            {% set camplist = collections.campaigns %}
+
+            {% for camp in camplist %}
+            {% if camp.data.title and camp.data.title | length > 5 %}
+
+            <article class="articles">
+                <a href="{{ camp.url | url }}">
+                    <div class="article-txt">
+                        <time>{{ camp.date | readableDate }}</time>
+                        <h2>{{ camp.data.title }}</h2>
+                        {% if camp.data.excerpt %}
+                        <p>{{ camp.data.excerpt }}</p>
+                        {% endif %}
+                    </div>
+                    <h3>Partners</h3>
+                    {% if camp.data.coverImage %}
+                    <img class="" src="{{ camp.data.coverImage }}" alt="{{ camp.data.title }}">
+                    {% endif %}
+                </a>
+            </article>
+            {% endif %}
+            {% endfor %}
+            <button id="show-more" class="show-more" onclick="showMore()">View Past Campaigns -></button>
+        </section>
+        <div id="petitions" class="sec-head">
+            <h1>Petitions</h1>
+            <button>
+                <svg width="29" height="28" viewBox="0 0 29 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g clip-path="url(#clip0_43_1326)">
+                        <path
+                            d="M5.4583 6.54508C7.81496 9.56675 12.1666 15.1667 12.1666 15.1667V22.1667C12.1666 22.8084 12.6916 23.3334 13.3333 23.3334H15.6666C16.3083 23.3334 16.8333 22.8084 16.8333 22.1667V15.1667C16.8333 15.1667 21.1733 9.56675 23.53 6.54508C24.125 5.77508 23.5766 4.66675 22.6083 4.66675H6.37996C5.41163 4.66675 4.8633 5.77508 5.4583 6.54508Z"
+                            fill="black" />
+                    </g>
+                    <defs>
+                        <clipPath id="clip0_43_1326">
+                            <rect width="28" height="28" fill="white" transform="translate(0.5)" />
+                        </clipPath>
+                    </defs>
+                </svg>
+                Filter
+            </button>
+        </div>
+    </div>
+    <section class="flex flex-wrap justify-center items-center wide-container">
+        {% set petitionlist = collections.petitions %}
+
+        {% for petition in petitionlist %}
+        {% if petition.data.title and petition.data.title | length > 5 %}
+
+        <article class="petition">
+            {% if petition.data.coverImage %}
+            <img class="" src="{{ petition.data.coverImage }}" alt="{{ petition.data.title }}">
+            {% endif %}
+            <div class="petition-txt">
+                <h2>{{ petition.data.title }}</h2>
+            </div>
+            <div class="case">
+                <a href=""><button class="sign-btn">Sign -></button></a>
+            </div>
+        </article>
+        {% endif %}
+        {% endfor %}
+    </section>
+</div>

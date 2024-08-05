@@ -1,0 +1,98 @@
+:root{
+    --primary-colour: #fff
+    }
+.blog-hero{
+    width: 100vw;
+    height: 377px;
+    background: #D9D9D9;
+    }
+.blog-nav{
+    background: #000;
+    width: 100%;
+    }
+.blog-nav-items{
+    min-width: 240px;
+    padding: 0 1rem;
+    height: 62px;
+    background: #000;
+    color: #fff;
+    border-right: #D9D9D9 solid 1px;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 62px;
+    text-align: center;
+    }
+.sec-head{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 2.5rem 0;
+    }
+.sec-head > h1{
+    font-weight: 700;
+    font-size: 60px;
+    line-height: 71px;
+    }
+.sec-head > div{
+    display: flex;
+    text-align: center;
+}
+.sec-head > div > label{
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+    margin-right: 1rem;
+    }
+.blog-article{
+    width: 1264px;
+    height: 270px;
+    background: #C1F9FF;
+    border-radius: 0px 0px 165px 0px;
+    display: flex;
+    position: relative;
+    }
+.blog-article > div{
+    padding: 2rem 15rem 0 2rem;
+    }
+.blog-article > div > h2{
+    font-family: 'Inika';
+    font-weight: 400;
+    font-size: 60px;
+    line-height: 78px;
+    color: #000000;
+    }
+.blog-article > div > p{
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 29px;
+    color: #000000;
+    }
+.blog-article > div > label{
+    width: 331px;
+    height: 62px;
+    background: #000000;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 62px;
+    text-align: center;
+    color: #FFFFFF;
+    position: absolute;
+    bottom: -12px;
+    }
+.blog-article > a{
+    position: absolute;
+    bottom: 0;
+    left: 1000px;
+    position: absolute;
+    width: 377px;
+    height: 174px;
+    background: #00BEFA;
+    border: 1px solid #000000;
+    border-radius: 87px 0px 0px 0px;
+    text-align: center;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 174px;
+    color: #000000;
+    }

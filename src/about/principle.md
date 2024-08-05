@@ -1,0 +1,21 @@
+---
+title1: "Everyone is welcome. Everyone is valued."
+principle1: "We are primarily youth-powered, but we welcome everyone and all parts of everyone. We strive to make our movement a safe environment and a trusted community for all. We prioritise inclusivity and intersectionality. Our struggle is across all spheres, and it is intergenerational. We must unite for a better future."
+title2: "We have a mission to ensure that our planet is livable."
+principle2: "Our work is directed towards enabling a livable planet for our generation and the generations to come. We demand policies and governance that center ecology, animals, the planet and people over profit."
+title3: "We work on principles of transformative justice."
+principle3: "We avoid calling people out and partaking in cancel-culture. We believe in restorative action and not punishment. We foster an environment of love and acceptance; acknowledgeing that we have all grown up in varying systems of oppression. We believe we need to enable an environment that encourages loving, nurturing, accepting and supporting each other."
+title4: "We strive to dismantle systems of oppression."
+principle4: "We challenge the systems of oppression that live within us, around us and upong us. We are constantly unlearning and relearning the practices we have grown up with. We believe that for climate and environmental action, we must tackle the contributing systems of inequality, colonialism, capitalism, patriarchy, casteism, ableism and racism that have enabled oppression and exploitation of beings and the land."
+title5: "We amplify the voices of those at the frontline of the climate crisis."
+principle5: "People on the frontlines of the climate crisis have been leading the fight for a better planet and we work to ensure that we support them. We listen to Indigenous leaders, Environmental defenders and the most impacted people and work alongside them to assist them in ways that they find helpful."
+title6: "We are a non-violent movement."
+principle6: "We use peaceful, democractic, considered and thoughtful actions to fight for climate and environmental justice."
+title7: "We believe in collective action"
+principle7: "We believe in the power of radical love and community care, we believe that all action can be taken through uniting together despite our differences."
+title8: "We are political but have no political affilitions."
+principle8: "We  believe that the climate crisis is political and we need governments  across the world to take action but we are not affiliated with any  political party. We believe in democracy and the power of people. We  demand a people-led recovery for climate and environmental justice."
+title9: "We center our work around intersectionality and social justice"
+principle9: "We believe in the power of radical love and community care, we believe that all action can be taken We understand the differential impacts the climate and environmental crises have on different sections of the society, and the overlapping intersections of how caste, gender, class, etc can operate to create different modes of discrimination and privilege. In all our work, we seek to take cognizance of our own positionality with respect to social structures, actively work to mitigate power and privilege, as well as centre those most affected by the climate and environmental crises in our activities.through uniting together despite our differences."
+tags: principles
+---

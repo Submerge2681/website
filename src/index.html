@@ -1,22 +1,30 @@
 ---
 layout: default
-title: Neat Starter
-path: home
 ---
 
-<div class="container mx-auto lg:h-screen flex flex-col justify-center items-center">
-  <h1>
-    Welcome to
-    <strong class="bg-clip-text text-transparent bg-gradient-to-r from-blue-500 to-purple-500">
-      {{title}}
-    </strong>
-  </h1>
-
-  <p>
-    <abbr title="netlify cms, eleventy, alpine js & tailwind css">NEAT</abbr>
-    Starter Template. Get Started by editing.
-    <code class="bg-gray-100 text-blue-800 p-1">/index.njk</code>
-  </p>
-
-  {% include "./_includes/partials/content.html" %}
+<div class="flex flex-col items-center justify-center colour-background hero-section">
+  <div class="lg:h-screen lg:w-screen flex flex-col justify-center space-x-4 items-center">
+    <h3 class="white-text hero-small-text inika-regular">We are a group of young people committed <br> to creating a more just world for</h5>
+    <div class="large-text-box">
+      <h1 class="white-text hero-large-text inika-regular">people,</h1>
+      <h1 class="white-text hero-large-text inika-regular">all living beings,</h1>
+      <h1 class="white-text hero-large-text inika-regular">the planet</h1>
+    </div>
+    <button class="urgent-button inika-regular">Urgent Action -></button>
+  </div>
+  <div class="img-cont1">
+    <div class="img1">image/graphic</div>
+    <div class="text-cont1">
+      <p class="img1-txt">introduction to movement</p>
+      <p class="img1-txt">introduction to movement</p>
+      <p class="img1-txt">introduction to movement</p>
+    </div>
+  </div>
+  <div class="img-cont2">
+    <div class="img2">
+      <a href="/campaigns"><div class="img2-button button-one">Campaigns -></div></a>
+      <a href="/join"><div class="img2-button button-two">Get involved -></div></a>
+      <a href="/library"><div class="img2-button button-three">Climate Library -></div></a>
+    </div>
+  </div>
 </div>

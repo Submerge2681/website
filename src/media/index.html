@@ -1,0 +1,22 @@
+---
+layout: default
+---
+
+<div class="flex flex-col items-center justify-center">
+    <div id="resources" class="sec-head default-container">
+        <h1>FFFI in the press!</h1>
+        <button class="press-btn">Press Kit -></button>
+    </div>
+    <section class="flex flex-wrap justify-center wide-container">
+        {% set media = collections.media %}
+
+        {% for sauce in media %}
+        {% if sauce.data.title and sauce.data.title | length > 5 %}
+        <article class="media-article">
+            <h2 class="">{{ sauce.data.title }}</h2>
+            <button class="media-article-button">-></button>
+        </article>
+        {% endif %}
+        {% endfor %}
+    </section>
+</div>

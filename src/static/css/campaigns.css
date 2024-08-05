@@ -1,0 +1,157 @@
+.campaigns-hero{
+    width: 100vw;
+    height: 377px;
+    background: #D9D9D9;
+    }
+.campaigns-nav{
+    background: #000;
+    width: 100%;
+    }
+.campaigns-nav-items{
+    min-width: 240px;
+    padding: 0 1rem;
+    height: 62px;
+    background: #000;
+    color: #fff;
+    border-right: #D9D9D9 solid 1px;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 62px;
+    text-align: center;
+    }
+.sec-head{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 2.5rem 0;
+    }
+.sec-head > h1{
+    font-weight: 700;
+    font-size: 60px;
+    line-height: 71px;
+    color: #F8FFA8;
+    }
+.sec-head > button{
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    align-items: center;
+    width: 159px;
+    height: 44px;
+    border: 1px solid #000000;
+    border-radius: 100px;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+    background-color: #fff;
+    }
+.articles{
+    position: relative;
+    width: 614px;
+    height: 712px;
+    background: #00AEC0;
+    border-radius: 0px 0px 165px 0px;
+    margin: 2rem;
+    }
+.article-txt > h2{
+    padding-left: 2rem;
+    font-family: 'Inika';
+    font-weight: 400;
+    font-size: 60px;
+    line-height: 78px;
+    }
+.article-txt > p{
+    padding-left: 2rem;
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 29px;
+    }
+.article-txt > time{
+    padding: 1rem 2rem;
+    background-color: #000;
+    color: #fff;
+    width: 269px;
+    height: 28px;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+    position: relative;
+    bottom: 14px;
+    }
+.articles > h3{
+    padding-left: 2rem;
+    position: absolute;
+    bottom: 350px;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+    color: #FFFFFF;
+    }
+.articles > img{
+    position: absolute;
+    width: 614px;
+    height: 337px;
+    bottom: 0;
+    background: #D9D9D9;
+    border-radius: 0px 0px 165px 0px;
+    }
+.show-more{
+    width: 370px;
+    height: 59px;
+    background: #000000;
+    border-radius: 100px;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+    color: #FFFFFF;
+    }
+.articles{
+    display: none;
+    }
+.articles.shown{
+    display: block;
+    }
+.petition{
+    margin: 2rem;
+    }
+.petition > img{
+    width: 425px;
+    height: 291px;
+    background: #D9D9D9;
+    border-radius: 100px 100px 0px 0px;
+    }
+.petition-txt{
+    padding: 1rem;
+    text-align: center;
+    width: 425px;
+    height: 291px;
+    background: #FFFFFF;
+    }
+.petition-txt > h2{
+    position: relative;
+    top: 2rem;
+    font-family: 'Inika';
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 42px;
+    }
+
+.sign-btn{
+    position: relative;
+    bottom: 29px;
+    padding: 10px;
+    width: 216px;
+    height: 59px;
+    background: #000000;
+    color: #fff;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+    }
+.case{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

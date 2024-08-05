@@ -1,0 +1,12 @@
+h1{
+    color: #fff;
+}
+.post-time{
+    color: #fff;
+}
+.post-body {
+    margin: 5rem auto;
+}
+article > p{
+    color: #fff;
+}

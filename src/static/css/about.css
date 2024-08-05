@@ -1,0 +1,307 @@
+.about-hero{
+    width: 100vw;
+    height: 377px;
+    background: #D9D9D9;
+    }
+.about-nav{
+    background: #000;
+    width: 100%;
+    }
+.about-nav-items{
+    min-width: 240px;
+    padding: 0 1rem;
+    height: 62px;
+    background: #000;
+    color: #fff;
+    border-right: #D9D9D9 solid 1px;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 62px;
+    text-align: center;
+    }
+.sec-head-about, .sec-head-vision, .sec-head-mission, .sec-head-principle, .sec-head-faq{
+    display: flex;
+    align-items: baseline;
+    margin: 2.5rem 0;
+    }
+.sec-head-about > h1, .sec-head-vision > h1{
+    font-weight: 700;
+    font-size: 100px;
+    line-height: 118px;
+    color: #F8FFA8;
+    }
+.sec-head-about> p, .sec-head-vision > p, .sec-head-mission > p{
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 29px;
+    color: #FFFFFF;
+    margin-left: 3rem;
+    }
+.black-body{
+    width: 100vw;
+    background-color: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    }
+.vision-card{
+    width: 467px;
+    height: 330px;
+    border-radius: 0px 0px 165px 0px;
+    background-color: #FFFFFF;
+    margin: 0 0.5rem;
+    font-family: 'Inika';
+    font-weight: 400;
+    font-size: 60px;
+    line-height: 330px;
+    text-align: center;
+    position: relative;
+    }
+.Justice-card{
+    background: #00AEC0;
+    }
+.Liberation-card{
+    background: #FF7A00;
+    }
+.Love-card{
+    background: #EBFF00;
+    }
+.vision-card > img{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    }
+.card-stack{
+    margin-bottom: 6rem;
+    }
+.mission-l-text, .mission-r-text {
+font-family: 'Inter';
+font-weight: 400;
+font-size: 24px;
+display: flex;
+justify-content: center;
+align-items: center;
+padding: 2rem;
+    }
+.sec-head-mission{
+    display: flex;
+    align-items: start;
+    margin: 2.5rem 0;
+    }
+.sec-head-mission > h1{
+    width: 700px;
+    text-align: start;
+    font-weight: 700;
+    font-size: 100px;
+    line-height: 118px;
+    color: #F8FFA8;
+    }
+.sec-head-mission> p{
+    width: 578px;
+    }
+.mission-l-text{
+    width: 494px;
+    height: 330px;
+    border-radius: 0px 165px 165px 0px;
+    }
+.mission-r-text{
+    width: 494px;
+    height: 330px;
+    border-radius: 165px 0px 0px 165px;
+    }
+.mission-img{
+    width: 100vw;
+    background: #D9D9D9;
+    margin: 1rem;
+    }
+.mission-one > .mission-img >.mission-l-text{
+    background-color: #C0F9FF;
+    }
+.mission-two > .mission-img >.mission-r-text{
+    background-color: #FF7900;
+    }
+.mission-three > .mission-img >.mission-l-text{
+    background-color: #00ADBF;
+    }
+.likes{
+    width: 1447px;
+    height: 1366px;
+    background-image: url('/static/img/earth.png');
+    }
+.likes > h1{
+    width: 896px;
+    margin-top: 5rem;
+    margin-bottom: 3rem;
+    font-weight: 700;
+    font-size: 62px;
+    line-height: 73px;
+    text-align: center;
+    color: #FFFFFF;
+    }
+.likes > h2{
+    margin-top: 3rem;
+    width: 611px;
+    height: 48px;
+    background: #FFFFFF;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 48px;
+    text-align: left;
+    padding-left: 1rem;
+    }
+.like-this{
+    color: #1B733E;
+    }
+.unlike-this{
+    color: #A95100;
+    }
+.likes > ul > li{
+    width: 553px;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 29px;
+    color: #FFFFFF;
+    margin: 1rem;
+    }
+.like-this-list > li, .unlike-this-list > li{
+    position: relative;
+    padding-left: 1.5em;
+    }
+.like-this-list > li::before, .unlike-this-list > li::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0.7em;
+    transform: translateY(-50%);
+    width: 1em;
+    height: 1em;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    }
+.like-this-list > li::before{
+    background-image: url('/static/img/like.svg');
+    }
+.unlike-this-list > li::before{
+    background-image: url('/static/img/unlike.svg');
+    }
+.sec-head-principles > h1{
+    font-weight: 700;
+    font-size: 100px;
+    line-height: 118px;
+    color: #FFFFFF;
+    text-align: start;
+    margin: 3rem;
+    }
+.operating-principle{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    }
+.principle{
+    position: relative;
+    width: 529px;
+    height: 565px;
+    background-image: url('/static/img/tablet.png');
+    padding: 7rem 4.5rem 0 4.5rem;
+    margin: 1rem 3rem;
+    }
+.principle > h3{
+    position: absolute;
+    left: 48%;
+    top: 1.8rem;
+    font-family: 'Inter';
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+    }
+.principle > h2{
+    font-family: 'Inter';
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+    text-align: center;
+    }
+.principle > p{
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    margin-top: 1.5rem;
+    }
+#tab9{
+    width: 761px;
+    height: 813px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 10rem 6rem 0 6rem;
+    }
+#tab9 > h3{
+    top: 3rem;
+    }
+.sec-head-faq {
+    align-items: center;
+    }
+.sec-head-faq > h1{
+    font-weight: 700;
+    font-size: 100px;
+    line-height: 118px;
+    color: #FFFFFF;
+    margin-bottom: 2rem;
+    }
+.sec-head-faq > input{
+    width: 410px;
+    height: 62px;
+    border: 1px solid #000000;
+    border-radius: 100px;
+    padding-left: 2rem;
+    }
+.sec-head-faq > input::placeholder{
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+    color: #3B3B3B;
+    }
+.faq-container {
+    max-width: 979px;
+    margin: 0 auto;
+    margin: 1rem;
+    }
+.faq-item {
+    margin: 1rem;
+    }
+.faq-question {
+    width: 979px;
+    height: 61px;
+    background: #C1F9FF;
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 29px;
+    text-align: left;
+    padding: 15px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    }
+.faq-question:hover {
+    background-color: #fff;
+    }
+.faq-answer {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+    width: 979px;
+    height: 61px;
+    font-family: 'Inter';
+    background-color: #fff;
+    }
+.faq-answer p {
+    padding: 15px;
+    margin: 0;
+    }
+.faq-question.active + .faq-answer {
+    background-color: #fff;
+    max-height: 1000px; /* Adjust this value based on your content */
+    }

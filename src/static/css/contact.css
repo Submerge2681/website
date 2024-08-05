@@ -1,0 +1,192 @@
+:root{
+    --primary-colour: #fff
+    }
+.contact-us{
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+.contact-form{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    }
+.contact-form > *{
+    margin: 1rem 0;
+    }
+.contact-form > h1{
+    font-weight: 700;
+    font-size: 60px;
+    line-height: 71px;
+    }
+.contact-form > .email{
+    width: 518px;
+    height: 67px;
+    border: 1px solid #000000;
+    }
+.contact-form > .message{
+    width: 795px;
+    height: 337px;
+    border: 1px solid #000000;
+    }
+.contact-form > .contact-button{
+    width: 370px;
+    height: 59px;
+    background: #000000;
+    border-radius: 100px;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+    color: #FFFFFF;
+    }
+.email{
+    padding-left: 1rem;
+    }
+.message{
+    padding: 1rem 0 0 1rem;
+    resize: none;
+    }
+.contact-social{
+    display: flex;
+    position: absolute;
+    right: 0;
+    bottom: 6rem;
+    }
+.contact-social > p{
+    margin-right: 1rem;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 38px;
+    }
+.contact-social > div > svg{
+    width: 48px;
+    height: 48px;
+    }
+.contact-dept{
+    margin: 5rem 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 5rem
+    }
+.contact-dept > div > h2{
+    font-family: 'Inika';
+    font-weight: 400;
+    font-size: 60px;
+    line-height: 78px;
+    }
+.contact-dept > div > p{
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 29px;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    }
+.contact-key > div{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 3rem;
+    margin: 3rem 0;
+    }
+.contact-key > h1{
+    font-weight: 700;
+    font-size: 60px;
+    line-height: 71px;
+    text-align: left;
+    }
+.contact-key > div > div{
+    width: 419px;
+    height: 264px;
+    background: #A8C6FF;
+    border-radius: 24px;
+    padding: 1rem;
+    }
+.contact-key > div > div > h2{
+    font-family: 'Inika';
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 63px;
+    }
+.contact-key > div > div > p{
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 29px;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    }
+.contact-letter{
+    display: flex;
+    flex-direction: column;
+    align-items: start !important;
+    }
+.contact-letter > #newsletter-contact >.newsletter-content{
+    margin: 1rem 0;
+    }
+.contact-letter > #newsletter-contact >.newsletter-content > input{
+    box-sizing: border-box;
+    width: 860px;
+    height: 67px;
+    border: 1px solid #000000;
+    background-color: #FFFFFF;
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 67px;
+    color: #000000;
+    }
+.contact-letter > #newsletter-contact >.newsletter-content > input::placeholder{
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 67px;
+    color: #000000;
+    }
+.contact-letter > #newsletter-contact >.newsletter-content > button{
+    width: 262px;
+    height: 59px;
+    background: #000000;
+    border-radius: 100px;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+    color: #FFFFFF;
+    }
+.contact-past-letters{
+    margin: 2rem 0;
+    position: relative;
+    display: flex;
+    justify-content: space-evenly;
+    }
+.contact-past-letters > div > h2{
+    width: 857px;
+    height: 67px;
+    background: #000000;
+    border: 1px solid #000000;
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 67px;
+    color: #FFFFFF;
+    padding-left: 1rem;
+    }
+.contact-past-letters > div > div{
+    width: 857px;
+    height: 472px;
+    background: #00AEC0;
+    border-radius: 0px 0px 165px 0px;
+    }
+.contact-past-letters > img{
+    position: relative;
+    top: -8rem;
+    flex-shrink: 2;
+    }
+#thanks-message > p, #thanks-letter-contact > p{
+    text-align: center;
+    line-height: 500px;
+    font-size: xx-large;
+    }
