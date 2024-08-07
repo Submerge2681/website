@@ -47,13 +47,3 @@ collections:
             fields:
               - { label: Title, name: text, widget: string }
               - { label: URL, name: url, widget: string }
-  - name: "Campaigns"
-    label: "campaigns"
-    folder: "src/campaigns"
-    create: true
-    fields:
-      - { label: "Title", name: "title", widget: "string" }
-      - { label: "Excerpt", name: "excerpt", widget: "string" }
-      - { label: "Body", name: "body", widget: "markdown" }
-      - { label: "CoverImage", name: "coverImage", widget: "image" }
-      - { label: "Date", name: "date", widget: "datetime" }
