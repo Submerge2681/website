@@ -6,10 +6,16 @@ const htmlmin = require("html-minifier");
 module.exports = function (eleventyConfig) {
 
   // Copy CSS Folder to /_site
-  eleventyConfig.addPassthroughCopy("./src/static/css");
+  eleventyConfig.addPassthroughCopy("/src/static/css");
 
   // Copy JS Folder to /_site
-  eleventyConfig.addPassthroughCopy("./src/static/js");
+  eleventyConfig.addPassthroughCopy("/src/static/js");
+
+  // Copy Image Folder to /_site
+  eleventyConfig.addPassthroughCopy("/src/static/img");
+
+  // Copy favicon to route of /_site
+  eleventyConfig.addPassthroughCopy("/src/favicon.ico");
 
   // Disable automatic use of your .gitignore
   eleventyConfig.setUseGitIgnore(false);
@@ -39,11 +45,6 @@ module.exports = function (eleventyConfig) {
       "./static/css/prism-tomorrow.css",
   });
 
-  // Copy Image Folder to /_site
-  eleventyConfig.addPassthroughCopy("./src/static/img");
-
-  // Copy favicon to route of /_site
-  eleventyConfig.addPassthroughCopy("./src/favicon.ico");
 
   // Minify HTML
   eleventyConfig.addTransform("htmlmin", function (content, outputPath) {
@@ -65,6 +66,7 @@ module.exports = function (eleventyConfig) {
   return {
     dir: {
       input: "src",
+      output: "_site"
     },
     htmlTemplateEngine: "njk",
   };
