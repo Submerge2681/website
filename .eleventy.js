@@ -6,16 +6,16 @@ const htmlmin = require("html-minifier");
 module.exports = function (eleventyConfig) {
 
   // Copy CSS Folder to /_site
-  eleventyConfig.addPassthroughCopy("/src/static/css");
+  eleventyConfig.addPassthroughCopy("./src/static/css");
 
   // Copy JS Folder to /_site
-  eleventyConfig.addPassthroughCopy("/src/static/js");
+  eleventyConfig.addPassthroughCopy("./src/static/js");
 
   // Copy Image Folder to /_site
-  eleventyConfig.addPassthroughCopy("/src/static/img");
+  eleventyConfig.addPassthroughCopy("./src/static/img");
 
   // Copy favicon to route of /_site
-  eleventyConfig.addPassthroughCopy("/src/favicon.ico");
+  eleventyConfig.addPassthroughCopy("./src/favicon.ico");
 
   // Disable automatic use of your .gitignore
   eleventyConfig.setUseGitIgnore(false);
