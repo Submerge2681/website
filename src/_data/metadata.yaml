@@ -1,0 +1,31 @@
+tags:
+  - title: OgImageType
+    tag: "image/jpeg"
+  - title: OgType
+    tag: "website"
+  - title: OgImage
+    tag: "test"
+  - title: OgUrl
+    tag: "test"
+  - title: OgTitle
+    tag: "test"
+  - title: OgDesc
+    tag: "test"
+  - title: Keywords
+    tag: "test"
+  - title: Robo
+    tag: "noindex, nofollow"
+  - title: Language
+    tag: "English"
+  - title: TwitCard
+    tag: "summary_large_image"
+  - title: TwitterHandle
+    tag: "@test"
+  - title: TwitTitle
+    tag: "test"
+  - title: TwitDisc
+    tag: "test"
+  - title: TwitImg
+    tag: "test"
+  - title: TwitAltImg
+    tag: "test"
