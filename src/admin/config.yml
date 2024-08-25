@@ -32,7 +32,7 @@ collections:
         options: ["Tags", "created", "from", "config.yml"]
   - label: "Settings"
     name: "settings"
-    editor:
+    editor: 
       preview: false
     files:
       - label: "Navigation"
@@ -61,30 +61,50 @@ collections:
               - { label: Tag, name: tag, widget: string }
   - label: "Campaigns"
     name: "campaigns"
-    editor:
-      preview: false
-    files:
-      - label: "Navigation"
-        name: "items"
-        file: "src/_data/navigation.yaml"
-        fields:
-          - label: Nav Items
-            name: items
-            widget: list
-            allow_add: false
-            collapsed: false
-            fields:
-              - { label: Title, name: text, widget: string }
-              - { label: URL, name: url, widget: string }
-      - label: "Metadata"
-        name: "metadata"
-        file: "src/_data/metadata.yaml"
-        fields:
-          - label: Tags
-            name: tags
-            widget: list
-            allow_add: true
-            collapsed: false
-            fields:
-              - { label: Title, name: title, widget: string }
-              - { label: Tag, name: tag, widget: string }
+    folder: "src/campaigns"
+    create: true
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Excerpt", name: "excerpt", widget: "string" }
+      - { label: "Publish Date", name: "date", widget: "datetime" }
+      - { label: "Cover Image", name: "coverImage", widget: "image"}
+      - { label: "Body", name: "body", widget: "markdown" }
+  - label: "Library -> Resources"
+    name: "resources"
+    folder: "src/resources"
+    create: true  
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Description", name: "description", widget: "string" }
+      - { label: "link", name: "link", widget: "string" }
+      - { label: "Image", name: "image", widget: "image", required: false }
+      - { label: "Body", name: "body", widget: "markdown" }
+  - label: "Library -> Articles"
+    name: "articles"
+    folder: "src/articles"
+    create: true  
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Description", name: "description", widget: "string" }
+      - { label: "link", name: "link", widget: "string" }
+      - { label: "Image", name: "image", widget: "image", required: false }
+      - { label: "Body", name: "body", widget: "markdown" }
+  - label: "Library -> Videos"
+    name: "videos"
+    folder: "src/videos"
+    create: true  
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Description", name: "description", widget: "string" }
+      - { label: "Date", name: "date", widget: "datetime" }
+      - { label: "Body", name: "body", widget: "markdown" }
+  - label: "Media"
+    name: "media"
+    folder: "src/media"
+    create: true  
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Description", name: "description", widget: "string" }
+      - { label: "link", name: "link", widget: "string" }
+      - { label: "Date", name: "date", widget: "datetime" } 
+      - { label: "Image", name: "image", widget: "image", required: false } 
