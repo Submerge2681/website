@@ -89,7 +89,7 @@ collections:
         file: "src/about/about.md"
         fields:
           - { label: Title, name: title, widget: string }
-          - { label: Permalink, name: permalink, widget: string }
+          - { label: "Body", name: "body", widget: "markdown" }     
       - label: "Vision"
         name: "vision"
         file: "src/about/vision.md"
@@ -100,6 +100,16 @@ collections:
           - { label: Description, name: description2, widget: string }
           - { label: Title, name: title3, widget: string }
           - { label: Description, name: description3, widget: string }
+      - label: "Mission"
+        name: "mission"
+        file: "src/about/mission.md"
+        fields:
+          - { label: Title, name: text1, widget: string }
+          - { label: "Image", name: image1, widget: "image"}
+          - { label: Title, name: text2, widget: string }
+          - { label: "Image", name: image2, widget: "image"}
+          - { label: Title, name: text3, widget: string }
+          - { label: "Image", name: image3, widget: "image"}
   - label: "Settings"
     name: "settings"
     editor: 

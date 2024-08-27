@@ -1,9 +1,9 @@
 ---
-title1: Justice
-description1: For all, especially those made most vulnerable by our current systems.
-title2: Liberation
-description2: From the oppressive systems that operate through us, within us, upon us and upon our planet.
-title3: Love
-description3: For ourselves, our communities, all living beings, and our planet. Through continual self-reflection, learning, and active engagement, we seek to hold ourselves, our communities and those in power accountable so that we embody this vision and move towards realizing it on our planet.
-tags: vision
+text1: "Nurturing communities committed to personal, collective and systemic transformation."
+Image1: '/static/img/campaigns/.png'
+text2: "Crafting campaigns that engage with people to facilitate transformation to a more just and liberated world."
+Image2: '/static/img/campaigns/.png'
+text3: "Collaboration and building coalitions with individuals and organisations with common points of interest."
+Image3: '/static/img/campaigns/.png'
+tags: mission   
 ---
