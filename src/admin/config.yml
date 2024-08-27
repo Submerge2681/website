@@ -12,53 +12,6 @@ public_folder: "/static/img"
 local_backend: true
 # publish_mode: editorial_workflow
 collections:
-  - label: "Blog"
-    name: "blog"
-    folder: "src/posts"
-    create: true
-    editor:
-      preview: false
-    fields:
-      - { label: "Title", name: "title", widget: "string" }
-      - { label: "Description", name: "description", widget: "string" }
-      - { label: "Author", name: "author", widget: "string" }
-      - { label: "Publish Date", name: "date", widget: "datetime" }
-      - { label: "Body", name: "body", widget: "markdown" }
-      - widget: select
-        label: "tags"
-        name: "tags"
-        multiple: true
-        create: true
-        options: ["Tags", "created", "from", "config.yml"]
-  - label: "Settings"
-    name: "settings"
-    editor: 
-      preview: false
-    files:
-      - label: "Navigation"
-        name: "items"
-        file: "src/_data/navigation.yaml"
-        fields:
-          - label: Nav Items
-            name: items
-            widget: list
-            allow_add: false
-            collapsed: false
-            fields:
-              - { label: Title, name: text, widget: string }
-              - { label: URL, name: url, widget: string }
-      - label: "Metadata"
-        name: "metadata"
-        file: "src/_data/metadata.yaml"
-        fields:
-          - label: Tags
-            name: tags
-            widget: list
-            allow_add: true
-            collapsed: false
-            fields:
-              - { label: Title, name: title, widget: string }
-              - { label: Tag, name: tag, widget: string }
   - label: "Campaigns"
     name: "campaigns"
     folder: "src/campaigns"
@@ -98,6 +51,24 @@ collections:
       - { label: "Description", name: "description", widget: "string" }
       - { label: "Date", name: "date", widget: "datetime" }
       - { label: "Body", name: "body", widget: "markdown" }
+  - label: "Blog"
+    name: "blog"
+    folder: "src/posts"
+    create: true
+    editor:
+      preview: false
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Description", name: "description", widget: "string" }
+      - { label: "Author", name: "author", widget: "string" }
+      - { label: "Publish Date", name: "date", widget: "datetime" }
+      - { label: "Body", name: "body", widget: "markdown" }
+      - widget: select
+        label: "tags"
+        name: "tags"
+        multiple: true
+        create: true
+        options: ["Tags", "created", "from", "config.yml"]
   - label: "Media"
     name: "media"
     folder: "src/media"
@@ -107,4 +78,68 @@ collections:
       - { label: "Description", name: "description", widget: "string" }
       - { label: "link", name: "link", widget: "string" }
       - { label: "Date", name: "date", widget: "datetime" } 
-      - { label: "Image", name: "image", widget: "image", required: false } 
+      - { label: "Image", name: "image", widget: "image", required: false }
+  - label: "AboutUs"
+    name: "aboutus"
+    editor: 
+      preview: false
+    files:
+      - label: "About"
+        name: "about"
+        file: "src/about/about.md"
+        fields:
+          - label: About-us
+            name: about-us
+            widget: list
+            allow_add: false
+            collapsed: false
+            fields:
+              - { label: Title, name: text, widget: string }
+              - { label: Permalink, name: permalink, widget: string }
+              - { label: Tag, name: tag, widget: string }
+      - label: "Vision"
+        name: "vision"
+        file: "src/about/vision.md"
+        fields:
+          - label: Vision-1 
+            name: vision-1
+            widget: list
+            allow_add: false
+            collapsed: false
+            fields:
+              - { label: Title, name: title1, widget: string }
+              - { label: Description, name: description1, widget: string }
+              - { label: Title, name: title2, widget: string }
+              - { label: Description, name: description2, widget: string }
+              - { label: Title, name: title3, widget: string }
+              - { label: Description, name: description3, widget: string }
+              - { label: Tag, name: tag, widget: string }
+  - label: "Settings"
+    name: "settings"
+    editor: 
+      preview: false
+    files:
+      - label: "Navigation"
+        name: "items"
+        file: "src/_data/navigation.yaml"
+        fields:
+          - label: Nav Items
+            name: items
+            widget: list
+            allow_add: false
+            collapsed: false
+            fields:
+              - { label: Title, name: text, widget: string }
+              - { label: URL, name: url, widget: string }
+      - label: "Metadata"
+        name: "metadata"
+        file: "src/_data/metadata.yaml"
+        fields:
+          - label: Tags
+            name: tags
+            widget: list
+            allow_add: true
+            collapsed: false
+            fields:
+              - { label: Title, name: title, widget: string }
+              - { label: Tag, name: tag, widget: string }
