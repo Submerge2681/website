@@ -88,32 +88,18 @@ collections:
         name: "about"
         file: "src/about/about.md"
         fields:
-          - label: About-us
-            name: about-us
-            widget: list
-            allow_add: false
-            collapsed: false
-            fields:
-              - { label: Title, name: text, widget: string }
-              - { label: Permalink, name: permalink, widget: string }
-              - { label: Tag, name: tag, widget: string }
+          - { label: Title, name: title, widget: string }
+          - { label: Permalink, name: permalink, widget: string }
       - label: "Vision"
         name: "vision"
         file: "src/about/vision.md"
         fields:
-          - label: Vision-1 
-            name: vision-1
-            widget: list
-            allow_add: false
-            collapsed: false
-            fields:
-              - { label: Title, name: title1, widget: string }
-              - { label: Description, name: description1, widget: string }
-              - { label: Title, name: title2, widget: string }
-              - { label: Description, name: description2, widget: string }
-              - { label: Title, name: title3, widget: string }
-              - { label: Description, name: description3, widget: string }
-              - { label: Tag, name: tag, widget: string }
+          - { label: Title, name: title1, widget: string }
+          - { label: Description, name: description1, widget: string }
+          - { label: Title, name: title2, widget: string }
+          - { label: Description, name: description2, widget: string }
+          - { label: Title, name: title3, widget: string }
+          - { label: Description, name: description3, widget: string }
   - label: "Settings"
     name: "settings"
     editor: 
