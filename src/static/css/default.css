@@ -8,6 +8,7 @@
     --primary-colour: #1A723E
     }
 body{
+    overflow-x: hidden;
     font-family: "Jura", sans-serif;
     font-weight: 500;
     font-style: normal;
@@ -49,7 +50,7 @@ body{
 /* Footer */
 .footer{
     max-width: 100vw;
-    height: 460px;
+    min-height: 460px;
     background-color: black;
     color: #fff;
     display: flex;
@@ -78,14 +79,15 @@ body{
     }
 .newsletter{
     max-width: 962px;
-    width: 50vw;
+    width: 80vw;
     height: 266px;
     background: #00AEC0;
     border-radius: 19px;
+    position: relative;
+    flex-direction: column;
     }
 .newsletter-inp{
-    width: 50vw;
-    max-width: 678px;
+    width: 80%;
     height: 67px;
     border: 1px solid #FFFFFF;
     background-color: #00AEC0;
@@ -113,13 +115,14 @@ body{
     }
 .newsletter-content{
     height: 100%;
-    margin-left: 4.5rem;
+    margin-left: 4vw;
     gap: 1rem;
     }
 .newsletter-img{
-    position: relative;
-    width: fit-content;
-    left: 45px;
+    position: absolute;
+    max-width: 266px;
+    right: -75px;
+    z-index: 999;
     }
 .default-container{
     width: 80vw;
@@ -129,3 +132,9 @@ body{
     width: 90vw;
     max-width: 1600px;
     }
+    @media (max-width: 1024px) {
+    .footer{
+        flex-direction: column-reverse;
+        padding: 4rem 0;
+    }
+}

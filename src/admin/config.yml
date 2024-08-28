@@ -20,7 +20,7 @@ collections:
       - { label: "Title", name: "title", widget: "string" }
       - { label: "Excerpt", name: "excerpt", widget: "string" }
       - { label: "Publish Date", name: "date", widget: "datetime" }
-      - { label: "Cover Image", name: "coverImage", widget: "image"}
+      - { label: "Cover Image", name: "coverImage", widget: image}
       - { label: "Body", name: "body", widget: "markdown" }
   - label: "Library -> Resources"
     name: "resources"
@@ -30,7 +30,7 @@ collections:
       - { label: "Title", name: "title", widget: "string" }
       - { label: "Description", name: "description", widget: "string" }
       - { label: "link", name: "link", widget: "string" }
-      - { label: "Image", name: "image", widget: "image", required: false }
+      - { label: image, name: image, widget: image, required: false }
       - { label: "Body", name: "body", widget: "markdown" }
   - label: "Library -> Articles"
     name: "articles"
@@ -40,7 +40,7 @@ collections:
       - { label: "Title", name: "title", widget: "string" }
       - { label: "Description", name: "description", widget: "string" }
       - { label: "link", name: "link", widget: "string" }
-      - { label: "Image", name: "image", widget: "image", required: false }
+      - { label: image, name: image, widget: image, required: false }
       - { label: "Body", name: "body", widget: "markdown" }
   - label: "Library -> Videos"
     name: "videos"
@@ -78,7 +78,7 @@ collections:
       - { label: "Description", name: "description", widget: "string" }
       - { label: "link", name: "link", widget: "string" }
       - { label: "Date", name: "date", widget: "datetime" } 
-      - { label: "Image", name: "image", widget: "image", required: false }
+      - { label: image, name: image, widget: image, required: false }
   - label: "AboutUs"
     name: "aboutus"
     editor: 
@@ -105,11 +105,67 @@ collections:
         file: "src/about/mission.md"
         fields:
           - { label: Title, name: text1, widget: string }
-          - { label: "Image", name: image1, widget: "image"}
+          - { label: image, name: image1, widget: image}
           - { label: Title, name: text2, widget: string }
-          - { label: "Image", name: image2, widget: "image"}
+          - { label: image, name: image2, widget: image}
           - { label: Title, name: text3, widget: string }
-          - { label: "Image", name: image3, widget: "image"}
+          - { label: image, name: image3, widget: image}
+      - label: "Like"
+        name: "like"
+        file: "src/about/like.md"
+        fields:
+          - { label: Item, name: like1, widget: string }
+          - { label: Item, name: like2, widget: string }
+          - { label: Item, name: like3, widget: string }
+          - { label: Item, name: like4, widget: string }
+          - { label: Item, name: like5, widget: string }
+      - label: "Unlike"
+        name: "unlike"
+        file: "src/about/unlike.md"
+        fields:
+          - { label: Item, name: unlike1, widget: string }
+          - { label: Item, name: unlike2, widget: string }
+          - { label: Item, name: unlike3, widget: string }
+          - { label: Item, name: unlike4, widget: string }
+          - { label: Item, name: unlike5, widget: string }
+      - label: "Principles"
+        name: "principles"
+        file: "src/about/principle.md"
+        fields:
+          - { label: Principle, name: title1, widget: string }
+          - { label: Description, name: principle1, widget: string }
+          - { label: Principle, name: title2, widget: string }
+          - { label: Description, name: principle2, widget: string }
+          - { label: Principle, name: title3, widget: string }
+          - { label: Description, name: principle3, widget: string }
+          - { label: Principle, name: title4, widget: string }
+          - { label: Description, name: principle4, widget: string }
+          - { label: Principle, name: title5, widget: string }
+          - { label: Description, name: principle5, widget: string }
+          - { label: Principle, name: title6, widget: string }
+          - { label: Description, name: principle6, widget: string }
+          - { label: Principle, name: title7, widget: string }
+          - { label: Description, name: principle7, widget: string }
+          - { label: Principle, name: title8, widget: string }
+          - { label: Description, name: principle8, widget: string }
+          - { label: Principle, name: title9, widget: string }
+          - { label: Description, name: principle9, widget: string }
+      - label: "FAQs"
+        name: "faq"
+        file: "src/about/faq.md"
+        fields:
+          - { label: "Question 1", name: faq1, widget: string }
+          - { label: "Answer 1", name: ans1, widget: string }
+          - { label: "Question 2", name: faq2, widget: string }
+          - { label: "Answer 2", name: ans2, widget: string }
+          - { label: "Question 3", name: faq3, widget: string }
+          - { label: "Answer 3", name: ans3, widget: string }
+          - { label: "Question 4", name: faq4, widget: string }
+          - { label: "Answer 4", name: ans4, widget: string }
+          - { label: "Question 5", name: faq5, widget: string }
+          - { label: "Answer 5", name: ans5, widget: string }
+          - { label: "Question 6", name: faq6, widget: string }
+          - { label: "Answer 6", name: ans6, widget: string }
   - label: "Settings"
     name: "settings"
     editor: 
