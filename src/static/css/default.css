@@ -8,7 +8,7 @@
     --primary-colour: #1A723E
     }
 body{
-    overflow-x: hidden;
+    overflow-x: hidden !important;
     font-family: "Jura", sans-serif;
     font-weight: 500;
     font-style: normal;
@@ -79,7 +79,7 @@ body{
     }
 .newsletter{
     max-width: 962px;
-    width: 80vw;
+    width: 70vw;
     height: 266px;
     background: #00AEC0;
     border-radius: 19px;
@@ -121,7 +121,8 @@ body{
 .newsletter-img{
     position: absolute;
     max-width: 266px;
-    right: -75px;
+    width: calc(266px - 5vw);
+    right: -50px;
     z-index: 999;
     }
 .default-container{
@@ -132,9 +133,19 @@ body{
     width: 90vw;
     max-width: 1600px;
     }
-    @media (max-width: 1024px) {
+
+@media (max-width: 1024px) {
     .footer{
         flex-direction: column-reverse;
         padding: 4rem 0;
     }
+    .newsletter{
+    width: 85vw;
+    }
+}
+@media (max-width: 660px) {
+    .newsletter-img{
+        width: calc(30vw);
+        right: calc(-50px + 7vw);
+        }
 }

@@ -2,7 +2,11 @@
     position: fixed;
     z-index: 9;
     padding-top: 0.5rem;
-    background: none;
+    background: url(/static/img/planet.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position-x: center;
+    background-position-y: 0;
     box-shadow: none;
     }
 .logo{
@@ -47,6 +51,7 @@
     background-attachment: fixed;
     background-position-x: center;
     background-position-y: 0;
+    padding-top: 20vh;
 }
 
 .img-cont1{
@@ -63,7 +68,8 @@
     align-items: center;
 }
 .img1{
-    min-width: 588px;
+    max-width: 588px;
+    width: 50vw;
     height: 400px;
     background: #D9D9D9;
     border-radius: 0px 200px 200px 0px;
@@ -113,4 +119,35 @@
 .button-three{
     width: 567px;
     background: #00AEC0;
+}
+
+@media (max-width: 1024px) {
+    .img2{
+        flex-direction: row;
+        height: 100%;
+    }
+    .img2-button{
+        height: 3rem;
+        width: 33.3vw;
+        border: 1px solid #FFFFFF;
+        border-radius: 0px;
+        text-align: center;
+        padding-right: 0;
+        justify-content: center;
+        font-size: 3.5vw;
+    }
+}
+
+@media (max-width: 660px) {
+    .img-cont1{
+        flex-direction: column;
+        align-items: start;
+    }
+    .img1{
+        max-width: 588px;
+        width: 100%;
+    }
+    .text-cont1{
+        width: 100%;
+    }
 }
