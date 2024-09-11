@@ -24,13 +24,13 @@ layout: default
     </div>
     {% set vision = collections.vision %}
     <div class="flex card-stack">
-      <div class="vision-card Justice-card">{{ vision[0].data.title1 }}
+      <div class="vision-card Justice-card"><p class="title">{{ vision[0].data.title1 }}</p><p class="card-hidden description">{{ vision[0].data.description1 }}</p>
         <img src="/static/img/justice.png" alt="">
       </div>
-      <div class="vision-card Liberation-card">{{ vision[0].data.title2 }}
+      <div class="vision-card Liberation-card"><p class="title">{{ vision[0].data.title2 }}</p><p class="card-hidden description">{{ vision[0].data.description2 }}</p>
         <img src="/static/img/liberation.png" alt="">
       </div>
-      <div class="vision-card Love-card">{{ vision[0].data.title3 }}
+      <div class="vision-card Love-card"><p class="title">{{ vision[0].data.title3 }}</p><p class="card-hidden description">{{ vision[0].data.description3 }}</p>
         <img src="/static/img/love.png" alt="">
       </div>
     </div>

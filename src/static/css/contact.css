@@ -20,17 +20,20 @@
     line-height: 71px;
     }
 .contact-form > .email{
-    width: 518px;
+    max-width: 518px;
+    width: 100%;
     height: 67px;
     border: 1px solid #000000;
     }
 .contact-form > .message{
-    width: 795px;
+    max-width: 795px;
+    width: 60vw;
     height: 337px;
     border: 1px solid #000000;
     }
 .contact-form > .contact-button{
-    width: 370px;
+    max-width: 370px;
+    width: 100%;
     height: 59px;
     background: #000000;
     border-radius: 100px;
@@ -48,9 +51,9 @@
     }
 .contact-social{
     display: flex;
-    position: absolute;
-    right: 0;
-    bottom: 6rem;
+    align-items: end;
+    justify-content: space-around;
+    padding-bottom: 6rem;
     }
 .contact-social > p{
     margin-right: 1rem;
@@ -181,6 +184,8 @@
     border-radius: 0px 0px 165px 0px;
     }
 .contact-past-letters > img{
+    width: 20vw;
+    height: calc(20vw * 0.9983);
     position: relative;
     top: -8rem;
     flex-shrink: 2;
@@ -189,4 +194,31 @@
     text-align: center;
     line-height: 500px;
     font-size: xx-large;
+    }
+
+@media (max-width: 1440px) {
+    .contact-us{
+        flex-direction: column;
+        }
+    .contact-social{
+        justify-content: end;
+        }
+    }
+@media (max-width: 1000px) {
+    .contact-dept > div > h2{
+        font-size: 3.5rem;
+        width: fit-content;
+    }
+    .contact-form > .email{
+        min-width: 250px;
+        width: 100%;
+        }
+    .contact-form > .message{
+        min-width: 250px;
+        width: 100%;
+        }
+    /* .contact-key > h1, .contact-form > h1{
+        font-size: 4rem !important;
+        width: fit-content;
+    } */
     }

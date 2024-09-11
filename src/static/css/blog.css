@@ -44,21 +44,25 @@
     margin-right: 1rem;
     }
 .blog-article{
-    width: 1264px;
-    height: 270px;
+    max-width: 1264px;
+    max-height: fit-content;
+    width: 80vw;
     background: #C1F9FF;
     border-radius: 0px 0px 165px 0px;
-    display: flex;
+    display: grid;
+    grid-template-columns: 90% 10%;
+    grid-template-rows: 90% 10%;
     position: relative;
+    justify-items: center;
     }
 .blog-article > div{
-    padding: 2rem 15rem 0 2rem;
+    padding: 2rem 2rem 0 2rem;
     }
 .blog-article > div > h2{
     font-family: 'Inika';
     font-weight: 400;
-    font-size: 60px;
-    line-height: 78px;
+    font-size: calc(30px + 1.5vw);
+    line-height: calc(35px + 2vw);
     color: #000000;
     }
 .blog-article > div > p{
@@ -78,21 +82,61 @@
     text-align: center;
     color: #FFFFFF;
     position: absolute;
-    bottom: -12px;
+    bottom: -2rem;
     }
 .blog-article > a{
-    position: absolute;
-    bottom: 0;
-    left: 1000px;
-    position: absolute;
-    width: 377px;
-    height: 174px;
+    /* position: relative; */
+    /* margin-top: auto; */
+    /* left: 10px; */
+    width: 15vw;
+    min-width: 5rem;
+    height: calc(15vw * 0.4615);
     background: #00BEFA;
     border: 1px solid #000000;
-    border-radius: 87px 0px 0px 0px;
+    border-radius: 4.5vw 0px 0px 0px;
     text-align: center;
     font-weight: 700;
-    font-size: 24px;
-    line-height: 174px;
+    font-size: calc(16px + 0.5vw);
+    line-height: calc(15vw * 0.4615);
     color: #000000;
+    grid-column: 2;
+    grid-row: 2;
+    align-self: end;
+    margin-right: 1rem;
     }
+.blog-article > a:hover{
+    color: #00BEFA;
+    background: #000000;
+    border-color: #00BEFA;
+    }
+
+@media (max-width: 660px) {
+    .blog-nav-items{
+        min-width: fit-content;
+        padding: 0 0.5rem;
+        font-size: calc(7px + 2vw);
+        }
+    .blog-article > div > label{
+        width: 50vw;
+        height: calc(50vw * 0.1873);
+        font-size: calc(10px + 2vw);
+        line-height: calc(50vw * 0.1873);
+        left: 3vw
+        }
+    .blog-article > div{
+        padding: 1rem;
+        width: 100%;
+        }
+    .blog-article{
+        justify-items: end;
+        }
+    .sec-head{
+        flex-direction: column;
+        }
+}
+@media (max-width: 400px) {
+    .blog-article > a{
+        line-height: calc(5rem * 0.4615);
+        min-height: calc(5rem * 0.4615);
+    }
+}

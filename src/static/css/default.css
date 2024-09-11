@@ -16,15 +16,20 @@ body{
     overflow: overlay;
 }
 .logo{
-    max-width: 121px;
+    margin-left: auto;
+    max-width: 150px;
     background-color: #1A723E;
     border-radius: 100%;
+}
+.burger > svg{
+    width: 50px;
+    height: 50px;
 }
 .nav-bar{
     top: 0;
     position: sticky;
     z-index: 9;
-    padding: 0.5rem 0;
+    padding: 1rem;
     background: #FFFFFF;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     }
@@ -123,7 +128,7 @@ body{
     max-width: 266px;
     width: calc(266px - 5vw);
     right: -50px;
-    z-index: 999;
+    z-index: 8;
     }
 .default-container{
     width: 80vw;

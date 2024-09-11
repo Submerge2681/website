@@ -13,9 +13,10 @@
     background: none;
 }
 .hero-small-text{
+    padding: 0 1rem 0 0;
     font-family: 'Jura';
     font-weight: 700;
-    font-size: 30px;
+    font-size: 25px;
     line-height: 35px;
     text-align: center;
     color: #FFFFFF;
@@ -29,7 +30,7 @@
     color: #FFFFFF;
 }
 .large-text-box{
-    margin: 2rem;
+    margin: 0.5rem;
 }
 .urgent-button{
     padding: 10px;
@@ -149,5 +150,9 @@
     }
     .text-cont1{
         width: 100%;
+    }
+    .hero-small-text{
+        margin-top: 2rem;
+        padding: 0 2rem;
     }
 }

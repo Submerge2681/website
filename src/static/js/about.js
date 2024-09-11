@@ -18,3 +18,24 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 });
+document.addEventListener('DOMContentLoaded', () => {
+    const cards = document.querySelectorAll('.vision-card');
+
+    cards.forEach(card => {
+        const title = card.querySelector('.title');
+        const description = card.querySelector('.description');
+
+        // Initially hide the description
+        description.style.display = 'none';
+
+        card.addEventListener('mouseenter', () => {
+            title.style.display = 'none';
+            description.style.display = 'block';
+        });
+
+        card.addEventListener('mouseleave', () => {
+            title.style.display = 'block';
+            description.style.display = 'none';
+        });
+    });
+});

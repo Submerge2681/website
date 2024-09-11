@@ -56,3 +56,12 @@
     font-size: 24px;
     line-height: 29px;
     }
+
+    @media (max-width: 660px) {
+        .sec-head{
+            flex-direction: column;
+            }
+        .wide-container{
+            width: 100vw !important;
+        }
+    }
