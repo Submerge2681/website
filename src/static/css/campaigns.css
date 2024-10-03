@@ -79,7 +79,7 @@
     position: relative;
     bottom: 14px;
     }
-.articles > h3{
+.articles > a > h3{
     padding-left: 2rem;
     position: absolute;
     bottom: 350px;
@@ -88,7 +88,7 @@
     line-height: 28px;
     color: #FFFFFF;
     }
-.articles > img{
+.articles > a >img{
     position: absolute;
     width: 614px;
     height: 337px;
@@ -115,7 +115,7 @@
 .petition{
     margin: 2rem;
     }
-.petition > img{
+.petition > a > img{
     width: 425px;
     height: 291px;
     background: #D9D9D9;
@@ -129,14 +129,11 @@
     background: #FFFFFF;
     }
 .petition-txt > h2{
-    position: relative;
-    top: 2rem;
     font-family: 'Inika';
     font-weight: 400;
     font-size: 32px;
     line-height: 42px;
     }
-
 .sign-btn{
     position: relative;
     bottom: 29px;

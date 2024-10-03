@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+      {{title}}
+    </title>
+    {% if description %}
+      <meta name="description" content="{{description}}"/>
+    {% endif %}
+    {% block head %}{% endblock %}
+    <link rel="stylesheet" type="text/css" href="/static/css/style.css"/>
+    {% if prism == true %}
+      <link rel="stylesheet" type="text/css" href="/static/css/prism-tomorrow.css">
+    {% endif %}
+    <link rel="stylesheet" href="/static/css/default.css">
+    <link rel="stylesheet" href="/static/css/post.css">
+    <script src="/static/js/base.js"></script>
+    <script src="/static/js{{ page.filePathStem | replace('/index', '') }}.js"></script>
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inika:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jura:wght@300..700&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    {% include "./partials/navbar.html" %}
+    
+    <div class="container max-w-4xl mt-6 px-6 post-body">
+        <div class="pb-5 mb-5 border-b border-gray-100">
+            <h1 class="font-bold text-5xl">{{title}}</h1>
+            <p class="text-center text-base leading-6 font-medium text-gray-500">
+                <time class="post-time">
+                    <!-- {% if date %}
+                    {{ date | readableDate }}
+                    {% endif %} -->   
+                </time>
+            </p>
+        </div>
+        <article class="prose lg:prose-xl my-4 mx-auto">
+            <img src="</a>" alt="">
+            {{ content | safe }}</article>
+    </div>
+    <a href="mailto:{{ toEmail }}?subject={{ subject | replace(' ', '%20') }}&cc={{ cc }}&bcc={{ bcc }}&body={{ content | replace('\n', '%0A') | replace(' ', '%20') | replace('<p>', '') | replace('</p>', '')}}">
+      <button class="sign-btn">Sign -></button>
+    </a>
+    {% include "./partials/footer.html" %}
+
+    <script src="/static/js/alpine.js"></script>
+
+    {% if path == "home" %}
+      <!-- Netlify Identity Widget -->
+      <!-- Needed only if you are using Netlify Identity feature -->
+      <script type="text/javascript" src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+    {% endif %}
+
+  </body>
+</html>

@@ -52,7 +52,7 @@ layout: default
             {% endfor %}
             <button id="show-more" class="show-more" onclick="showMore()">View Past Campaigns -></button>
         </section>
-        <!-- <div id="petitions" class="sec-head">
+        <div id="petitions" class="sec-head">
             <h1>Petitions</h1>
             <button>
                 <svg width="29" height="28" viewBox="0 0 29 28" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -69,26 +69,29 @@ layout: default
                 </svg>
                 Filter
             </button>
-        </div> -->
+        </div>
     </div>
-    <!-- <section class="flex flex-wrap justify-center items-center wide-container">
+    <section class="flex flex-wrap justify-center items-center wide-container">
         {% set petitionlist = collections.petitions %}
 
         {% for petition in petitionlist %}
         {% if petition.data.title and petition.data.title | length > 5 %}
 
         <article class="petition">
-            {% if petition.data.coverImage %}
-            <img class="" src="{{ petition.data.coverImage }}" alt="{{ petition.data.title }}">
-            {% endif %}
-            <div class="petition-txt">
-                <h2>{{ petition.data.title }}</h2>
-            </div>
+            <a href="{{ petition.url | url }}">
+                {% if petition.data.coverImage %}
+                <img class="" src="{{ petition.data.coverImage }}" alt="{{ petition.data.title }}">
+                {% endif %}
+                <div class="petition-txt">
+                    <h2>{{ petition.data.title }}</h2>
+                    <p>{{ petition.data.description }}</p>
+                </div>
+            </a>
             <div class="case">
-                <a href=""><button class="sign-btn">Sign -></button></a>
+                <a href="mailto:{{ petition.data.toEmail }}?subject={{ petition.data.subject | replace(' ', '%20') }}&cc={{ petition.data.cc }}&bcc={{ petition.data.bcc }}&body={{ petition.templateContent | replace('\n', '%0A') | replace(' ', '%20') | replace('<p>', '') | replace('</p>', '')}}"><button class="sign-btn">Sign -></button></a>
             </div>
         </article>
         {% endif %}
         {% endfor %}
-    </section> -->
+    </section>
 </div>

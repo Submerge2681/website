@@ -22,6 +22,20 @@ collections:
       - { label: "Publish Date", name: "date", widget: "datetime" }
       - { label: "Cover Image", name: "coverImage", widget: image}
       - { label: "Body", name: "body", widget: "markdown" }
+  - label: "Petitions"
+    name: "petitions"
+    folder: "src/petitions"
+    create: true
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Description", name: "description", widget: "string" }
+      - { label: "Due Date", name: "due", widget: "datetime"}
+      - { label: "Cover Image", name: "coverImage", widget: image}
+      - { label: "EmailIDs", name: "toEmail", widget: "string" }
+      - { label: "cc", name: "cc", widget: "string" }
+      - { label: "bcc", name: "cc", widget: "string" }
+      - { label: "Subject", name: "subject", widget: "string" }
+      - { label: "Body", name: "body", widget: "markdown" }
   - label: "Library -> Resources"
     name: "resources"
     folder: "src/resources"

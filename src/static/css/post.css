@@ -10,3 +10,28 @@ h1{
 article > p{
     color: #fff;
 }
+.post-body{
+    position: relative;
+}
+.sign-btn{
+    /* position: relative; */
+    position: sticky;
+    bottom: 50%;
+    left: 100%;
+    padding: 10px;
+    width: 15vw;
+    height: 59px;
+    background: #000000;
+    color: #fff;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+    z-index: 1;
+    margin-bottom: 2rem;
+}
+@media (max-width: 1000px) {
+    .sign-btn{
+        border-radius: 100px 0 0 100px;
+        width: 7rem;
+    }
+}
